@@ -2,7 +2,7 @@
 
 Personal CV website, hosted with GitHub Pages.
 
-**Link:** https://neoleeen.github.io/neoleensherpa.github.io/
+**Link:** [neoleeen.github.io](https://neoleeen.github.io/neoleensherpa.github.io/)
 
 ## About
 
