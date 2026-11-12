@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neoleen Sherpa | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ===== NAVIGATION BAR ===== -->
+    <header class="navbar">
+        <a href="#hero" class="logo">&lt;NS /&gt;</a>
+
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-buttons">
+            <button id="theme-toggle" aria-label="Switch between light and dark mode">☀️</button>
+            <button id="menu-toggle" aria-label="Open menu">☰</button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ===== HERO SECTION ===== -->
+        <section id="hero" class="hero">
+            <div class="initials">NS</div>
+            <p class="code-comment">// hello world</p>
+            <h1>Hi, I'm <span class="highlight">Neoleen Sherpa</span></h1>
+            <p class="tagline">Aerospace Engineering Student → Python &amp; Data Engineering</p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View my work</a>
+                <a href="files/cv.pdf" class="btn btn-secondary" download>Download CV</a>
+            </div>
+        </section>
+
+        <!-- ===== PLACEHOLDER SECTIONS (filled in Parts 2–4) ===== -->
+        <!-- ===== ABOUT SECTION ===== -->
+        <section id="about" class="about">
+            <p class="section-label">// about</p>
+            <h2>About me</h2>
+
+            <p>
+                I'm an Aerospace Engineering student at the University of Surrey, turning a
+                passion for software into a career. I work mainly in Python and have built
+                projects ranging from an AI-powered blog generator to a song recommender
+                using the Last.fm API.
+            </p>
+            <p>
+                I've completed a data engineering internship focused on ETL pipelines, and
+                I'm now on a software development internship with London Success Academy,
+                building web projects like this portfolio. I'm looking for graduate roles and internships in
+                Python development, data engineering and AI/machine learning.
+            </p>
+            <p>
+                Through Formula Student and Peryton Space Societies, I've learned to deliver technical
+                work as part of a team, and I bring the same analytical, problem-solving
+                mindset from engineering to everything I build.
+            </p>
+
+            <h3>Interests</h3>
+            <ul class="tags">
+                <li>Python Development</li>
+                <li>Artificial Intelligence</li>
+                <li>Machine Learning</li>
+                <li>Computer Vision</li>
+                <li>Simulation &amp; Optimisation</li>
+                <li>Data Engineering</li>
+            </ul>
+        </section>
+        </section>
+        <!-- ===== SKILLS SECTION ===== -->
+        <section id="skills" class="skills">
+            <p class="section-label">// skills</p>
+            <h2>Skills</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-group">
+                    <h3>Languages</h3>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>MATLAB</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Web</h3>
+                    <ul class="tags">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Data &amp; Libraries</h3>
+                    <ul class="tags">
+                        <li>NumPy</li>
+                        <li>pandas</li>
+                        <li>Matplotlib</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Data Engineering</h3>
+                    <ul class="tags">
+                        <li>ETL Pipelines</li>
+                        <li>PySpark</li>
+                        <li>DuckDB</li>
+                        <li>Parquet</li>
+                        <li>pytest</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h3>APIs &amp; AI</h3>
+                    <ul class="tags">
+                        <li>REST APIs</li>
+                        <li>JSON</li>
+                        <li>OpenAI API</li>
+                        <li>Generative AI</li>
+                        <li>GitHub Copilot</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Tools</h3>
+                    <ul class="tags">
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Command Line</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Engineering Software</h3>
+                    <ul class="tags">
+                        <li>Fusion 360</li>
+                        <li>Ansys</li>
+                        <li>Microsoft Office</li>
+                        <li>Google Workspace</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        </section>
+        <!-- ===== PROJECTS SECTION ===== -->
+        <section id="projects" class="projects">
+            <p class="section-label">// projects</p>
+            <h2>Projects</h2>
+
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <p class="badge">Internship project</p>
+                    <h3>NHS GP Appointments ETL Pipeline</h3>
+                    <p>
+                        Built an end-to-end Python ETL pipeline turning 1.5M+ rows of NHS data
+                        into a DuckDB warehouse and KPI dashboard using PySpark and SQL, with
+                        24 pytest tests and 9 automated quality checks.
+                    </p>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>PySpark</li>
+                        <li>DuckDB</li>
+                        <li>SQL</li>
+                        <li>pytest</li>
+                    </ul>
+                    <a href="https://github.com/neoleeen/nhs-gp-appointments-etl" class="project-link" target="_blank"
+                        rel="noopener">View on GitHub →</a>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <p class="badge">In progress</p>
+                    <h3>Song Recommender</h3>
+                    <p>
+                        Recommends similar songs from listener tags, with a data pipeline
+                        covering over 1400 songs across 30 genres.
+                    </p>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>pandas</li>
+                        <li>scikit-learn</li>
+                        <li>REST APIs</li>
+                    </ul>
+                    <a href="https://github.com/neoleeen/song-recommender" class="project-link" target="_blank"
+                        rel="noopener">View on GitHub →</a>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <p class="badge">Completed</p>
+                    <h3>AI Blog Generator</h3>
+                    <p>
+                        Generates blog posts paragraph by paragraph, with API keys secured
+                        via environment variables.
+                    </p>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>OpenAI API</li>
+                    </ul>
+                    <a href="https://github.com/neoleeen/blog_generator" class="project-link" target="_blank"
+                        rel="noopener">View on GitHub →</a>
+                </article>
+
+            </div>
+        </section>
+        </section>
+        <!-- ===== EXPERIENCE SECTION ===== -->
+        <section id="experience" class="experience">
+            <p class="section-label">// experience</p>
+            <h2>Experience</h2>
+
+            <!-- Internships -->
+            <h3>Internships</h3>
+            <div class="timeline">
+
+                <article class="timeline-item">
+                    <p class="timeline-date">Nov 2026 – Present · Remote</p>
+                    <h4>Software Developer Intern</h4>
+                    <p class="timeline-org">London Success Academy</p>
+                    <ul>
+                        <li>Building and deploying a responsive personal portfolio website with HTML, CSS and
+                            JavaScript, using semantic HTML, Flexbox and Grid layouts and interactive features</li>
+                        <li>Completing weekly software development assignments covering clean, well-structured code,
+                            testing and deployment</li>
+                    </ul>
+                </article>
+
+                <article class="timeline-item">
+                    <p class="timeline-date">Oct 2026 · Remote</p>
+                    <h4>Data Engineering Intern</h4>
+                    <p class="timeline-org">London Success Academy</p>
+                    <ul>
+                        <li>Built an end-to-end Python ETL pipeline turning 1.5M+ rows of NHS data into a DuckDB
+                            warehouse and KPI dashboard using PySpark and SQL</li>
+                        <li>Wrote modular, configurable code with logging, rerun-safe database loads and one-command
+                            automation, managed with Git and GitHub</li>
+                        <li>Ensured reliability with 24 pytest tests and 9 automated quality checks, and documented and
+                            presented design decisions to mentors</li>
+                    </ul>
+                </article>
+
+            </div>
+
+            <!-- Engineering teams -->
+            <h3>Engineering teams</h3>
+            <div class="timeline">
+
+                <article class="timeline-item">
+                    <p class="timeline-date">Feb 2026 – May 2026</p>
+                    <h4>Design Group Project</h4>
+                    <p class="timeline-org">University of Surrey</p>
+                    <ul>
+                        <li>Designed and built a radio-controlled aircraft in a team, contributing across research,
+                            design and build phases</li>
+                        <li>Researched aerodynamic and structural requirements, presented findings in weekly meetings,
+                            and modelled aircraft components in Fusion 360</li>
+                    </ul>
+                </article>
+
+                <article class="timeline-item">
+                    <p class="timeline-date">Oct 2024 – Dec 2025</p>
+                    <h4>Formula Student Society, Chassis Team</h4>
+                    <p class="timeline-org">University of Surrey</p>
+                    <ul>
+                        <li>Analysed chassis components (e.g. seat structures, aero mounts) to support design decisions
+                            in the chassis sub-team</li>
+                        <li>Presented technical findings in weekly meetings and contributed to design reviews</li>
+                    </ul>
+                </article>
+
+                <article class="timeline-item">
+                    <p class="timeline-date">Oct 2024 – Jun 2025</p>
+                    <h4>Peryton Space Society, Rover Team</h4>
+                    <p class="timeline-org">University of Surrey</p>
+                    <ul>
+                        <li>Worked on mechanical design and prototyping as part of a sub-team to develop a rover for the
+                            UKSEDS Olympus Rover Trials</li>
+                        <li>Researched chassis designs and materials, presented findings, and contributed to PDR
+                            documentation</li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+        </section>
+        <!-- ===== EDUCATION SECTION ===== -->
+        <section id="education" class="education">
+            <p class="section-label">// education</p>
+            <h2>Education</h2>
+
+            <article class="education-card">
+                <p class="timeline-date">Sep 2024 – Jun 2027 (Expected) · Guildford, Surrey</p>
+                <h3>BEng Aerospace Engineering</h3>
+                <p class="timeline-org">University of Surrey</p>
+                <p class="grade">Year 2: Upper Second Class Honours (2:1), 62% average</p>
+
+                <h4>Relevant modules</h4>
+                <ul class="modules">
+                    <li><span>Numerical Methods &amp; Applied Programming</span> <span class="module-grade">82%</span>
+                    </li>
+                    <li><span>Aircraft Structures &amp; Aeroelasticity</span> <span class="module-grade">72%</span></li>
+                    <li><span>Design Skills</span> <span class="module-grade">69%</span></li>
+                    <li><span>Design, Make and Evaluate</span> <span class="module-grade">66%</span></li>
+                    <li><span>Control</span> <span class="module-grade">50%</span></li>
+                </ul>
+            </article>
+        </section>
+        </section>
+        <!-- ===== CERTIFICATIONS SECTION ===== -->
+        <section id="certifications" class="certifications">
+            <p class="section-label">// certifications</p>
+            <h2>Certifications</h2>
+
+            <div class="cert-grid">
+
+                <article class="cert-card">
+                    <p class="badge">Python</p>
+                    <h3>The Legend of Python</h3>
+                    <p class="timeline-org">Codédex · Oct 2026</p>
+                    <a href="files/python-certificate.pdf" class="btn btn-secondary" target="_blank" rel="noopener">View
+                        certificate</a>
+                </article>
+
+                <article class="cert-card">
+                    <p class="badge">Internship</p>
+                    <h3>Data Engineering Internship</h3>
+                    <p class="timeline-org">London Success Academy · Oct 2026</p>
+                    <a href="files/lsa-data-certificate.pdf" class="btn btn-secondary" target="_blank" rel="noopener">View
+                        certificate</a>
+                </article>
+
+            </div>
+        </section>
+        </section>
+        <!-- ===== CONTACT SECTION ===== -->
+        <section id="contact" class="contact">
+            <p class="section-label">// contact</p>
+            <h2>Get in touch</h2>
+            <p>
+                I'm currently looking for graduate opportunities in Python development,
+                data engineering and AI/machine learning. Feel free to reach out.
+            </p>
+
+            <div class="contact-links">
+                <a href="mailto:neoleensherpa@gmail.com" class="btn btn-primary">Email me</a>
+                <a href="https://www.linkedin.com/in/neoleen-sherpa/" class="btn btn-secondary" target="_blank"
+                    rel="noopener">LinkedIn</a>
+                <a href="https://github.com/neoleeen" class="btn btn-secondary" target="_blank"
+                    rel="noopener">GitHub</a>
+            </div>
+        </section>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p>&copy; 2026 Neoleen Sherpa</p>
+        <p>Built with HTML, CSS and JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
