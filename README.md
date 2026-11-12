@@ -2,7 +2,7 @@
 
 A responsive personal portfolio website showcasing my skills, projects, experience and certifications as a developer. Built from scratch with HTML, CSS and JavaScript as part of my Software Development Internship with London Success Academy.
 
-**Live site:** [Add link in Step 7](https://example.com)
+**Live site:** [neoleensherpa.github.io](https://neoleeen.github.io/neoleensherpa.github.io/)
 
 ## Features
 
